@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+js_promo/__init__.py
+js_promo/cms_plugins.py
+js_promo/models.py
+js_promo.egg-info/PKG-INFO
+js_promo.egg-info/SOURCES.txt
+js_promo.egg-info/dependency_links.txt
+js_promo.egg-info/not-zip-safe
+js_promo.egg-info/top_level.txt
+js_promo/migrations/0001_initial.py
+js_promo/migrations/__init__.py
+js_promo/templates/js-promo/promo.html

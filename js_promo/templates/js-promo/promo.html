@@ -1,0 +1,29 @@
+{% load sekizai_tags cms_tags thumbnail %}
+<section class="border-bottom-light sm-text-center">
+    <div class="container">
+        {% if  object.title %}
+            <div class="row">
+                <div class="col-md-7 col-sm-12 text-center center-col">
+                    <h2 class="title-large text-uppercase letter-spacing-1 black-text font-weight-600 wow fadeIn">{{ object.title }}</h2>
+                </div>
+            </div>
+        {% endif %}
+        <div class="row">
+            <div class="col-md-6">
+                {% if  object.image %}
+                    {% thumbnail  object.image "600x0" crop="center" as im %}
+                    <img src="{{ im.url }}" alt=""/>
+                {% endif %}
+            </div>
+            <div class="col-md-6">
+                {% if object.sub_title %}
+                    <h3 class="title-large font-weight-700 black-text margin-five text-transform-none">{{ object.sub_title }}</h3>
+                {% endif %}
+                <p class="title-small font-weight-300">{{ object.summary|linebreaksbr }}</p>
+                {% if  object.link_text and object.link_url %}
+                    <a href="{{ object.link_url }}" class="highlight-button-black-border btn margin-six">{{ object.link_text }}</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>

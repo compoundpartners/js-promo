@@ -1,0 +1,6 @@
+{
+    "package-name": "js-promo",
+    "installed-apps": [
+        "js_promo"
+    ]
+}
